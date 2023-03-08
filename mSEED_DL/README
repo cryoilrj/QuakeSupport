@@ -6,4 +6,5 @@ This folder contains:
   - webdrive-manager automatically uses the correct ChromeDriver so you do not have to re-download the latest version each Chrome update
   - Modify the download URL to match your specific IRIS URL, which should have a similar format
   - Provide your username and password in the download URL if required, otherwise remove "user:password@"
-  - Code can be modified to download from different time windows and chunks; 2-hr chunks help to prevent overly large file sizes and speed up the process
+  - Code can be modified to download from different time windows and and in different chunks
+  - We used 2-hr chunks here to prevent extremely large file sizes and to speed up the process through simultaneous downloads
