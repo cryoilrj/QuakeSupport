@@ -50,3 +50,5 @@ for c in range(12):
             "endtime=" + today.strftime("%Y-%m-%d"),
             "endtime=" + tmr.strftime("%Y-%m-%d"),
         )
+while True:
+    pass
