@@ -35,12 +35,14 @@ for c in range(12):
     driver.get(url_path)  # Access URL and download data
 
     # Modify download URL for next iteration
+    # Change times
     if c < 11:
         s0 = "T" + starttime[c] + "%"
         s1 = "T" + starttime[c + 1] + "%"
         e0 = "T" + endtime[c] + "%"
         e1 = "T" + endtime[c + 1] + "%"
         time_string = time_string.replace(s0, s1).replace(e0, e1)
+    # Change dates
     if c == 0:
         time_string = time_string.replace(
             ytd.strftime("%Y-%m-%d"), today.strftime("%Y-%m-%d")
