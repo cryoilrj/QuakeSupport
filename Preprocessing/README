@@ -14,6 +14,5 @@ This folder contains:
   - Packages required: ObsPy
   - If your sampling period > seconds decimal precision specified for your traces, the stream traces can have various time offsets < sampling period
   - This is not a serious problem, as the stream trace times are still considered similar and the data length is the same
-  - In fact, QuakeMigrate does the exact same shifting when processing the traces. However, a message is generated for each shift which clogs up the QuakeMigrate logs
-  - e.g., "Trace 5B.16611..GPZ | 2019-01-28T14:59:55.350998Z - 2019-01-28T15:01:10.000998Z | 500.0 Hz, 37326 samples has off-sample data. Applying -0.000998 s shift to timing."
+  - QuakeMigrate does the exact same shifting when processing the traces. However, a message is generated for each shift which clogs up the logs
   - Running this script prior to QuakeMigrate processing avoids the message spam in the logs by nominally aligning the stream trace times
