@@ -16,3 +16,4 @@ This folder contains:
   - This is not a serious problem, as the stream trace times are still considered similar and the data length is the same
   - QuakeMigrate does the exact same shifting when processing the traces. However, a message is generated for each shift which clogs up the logs
   - Running this script prior to QuakeMigrate processing avoids the message spam in the logs by nominally aligning the stream trace times
+  - TODO: Example of stream trace offsets
