@@ -1,4 +1,4 @@
-# Script to align trace times within a stream
+# Script to align stream trace times
 
 # Import modules
 import glob
@@ -15,7 +15,7 @@ for s in strms:
 
     # Apply alignment
     shift = max(starttimes) - min(starttimes)  # Compute the time shift
-    if shift < (1 / fs):  # Less than sampling frequency
+    if shift < (1 / fs):  # Less than sampling period
         for tr in strm:
             if tr.stats.starttime < max(starttimes):
                 tr.stats.starttime += shift  # Align streams nominally
