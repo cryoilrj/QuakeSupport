@@ -11,7 +11,7 @@ This folder contains:
   - TODO: Close browser after download completes
 
 2) stAlign.py: Script to align stream trace times
-  - Packages required: ObsPy
+  - Package required: ObsPy
   - If your sampling frequency < decimal precision specified for your traces, the traces can have time offsets less < sampling frequency
   - This is not a serious problem, as the trace times are still considered similar and the data length is the same
   - In fact, QuakeMigrate does the exact same shifting when processing the traces. However, a message is generated for each shift which clogs up the logs
