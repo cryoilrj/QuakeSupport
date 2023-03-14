@@ -8,3 +8,4 @@ This folder contains:
   - Provide your username and password in the download URL if required, otherwise remove "user:password@"
   - Code can be modified to download from different time windows and in different chunks
   - 2-hr chunks were used here to prevent extremely large file sizes and to speed up the process through simultaneous downloads
+  - TODO: Close browser after download completes
