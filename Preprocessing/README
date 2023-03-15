@@ -21,7 +21,7 @@ This folder contains:
 
 3) mSEED_ReformatQM.py: Script to center data and reformat miniSEED (mSEED) files for QuakeMigrate input
   - Packages required: numpy, obspy
-  - QuakeMigrate requires the input traces to be separated by components and have specific filename formats (date_starttime_station_component)
+  - QuakeMigrate requires the input traces to be separated by station-component and have specific filename formats (date_starttime_station_component)
   - Centering applied to the data to prevent underestimation/overestimation of the QM coalescence computation
   - This example follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of mSEED data in 2-hr chunks
   - 2-hr chunks were used to avoid extremely large file sizes; increase the chunk size or remove altogether data size is small
