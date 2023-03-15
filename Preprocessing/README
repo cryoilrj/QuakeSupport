@@ -11,10 +11,22 @@ This folder contains:
   - TODO: Close browser after download completes
 
 2) stAlign.py: Script to align stream trace times
-  - Packages required: ObsPy
+  - Packages required: obspy
   - If your sampling period > seconds decimal precision specified for your traces, the stream traces can have various time offsets < sampling period
   - This is not a serious problem, as the stream trace times are still considered similar and the data length is the same
   - In fact, QuakeMigrate does the exact same shifting when processing the traces but it generates a message for each shift which clogs up the logs
   - Running this script prior to QuakeMigrate processing avoids the message spam in the logs by nominally aligning the stream trace times
   - Modify lines 20 and 21 depending on how you want to align your stream traces to a "master" starttime
   - TODO: Example of stream trace offsets
+
+3) mSEED_ReformatQM.py: Scrip to center data and reformat mSEED files for QuakeMigrate input
+  - Packages required: numpy, obspy
+  - QuakeMigrate requires the input traces to separated by components and a specific filename format (Date_Starttime_Station_Component)
+  - We applied centering to the data to prevent underestimation and overestimation of the QM coalescence computation
+  - This example follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of miniSEED (mSEED) data in 2-hr chunks
+  - 2-hr chunks were used here to prevent extremely large file sizes, you may increase the chunk size or remove altogether if data is small enough
+  - This script assumes the standard 3 components (one vertical, two horizontal), modify as needed if less than 3 components
+  - Ensure that your QuakeMigrate/input/mSEED/ directory has a corresponding year folder for the mSEED file being reformatted
+  - A trace's channel and component can be found using tr.stats.channel and tr.stats.component, respectively
+  - TODO: Create inputs/mSEED/year level directories if they does not already exist
+  
