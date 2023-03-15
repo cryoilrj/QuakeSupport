@@ -25,7 +25,7 @@ This folder contains:
   - Centering applied to the data to prevent underestimation/overestimation of the QM coalescence computation
   - This example follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of mSEED data in 2-hr chunks
   - 2-hr chunks were used to avoid extremely large file sizes; increase the chunk size or remove altogether if data size is small
-  - This script assumes the standard 3 components (one vertical, two horizontal), comment out/remove unused component variables if < 3 components
+  - Script assumes the standard 3 components (one vertical, two horizontal), comment out/remove unused component variables if < 3 components
   - A trace's channel and component can be found using tr.stats.channel and tr.stats.component, respectively
   - Ensure a QuakeMigrate/input/mSEED/year directory exists for the mSEED file being reformatted
   - TODO: Create inputs/mSEED/year-level directories if they do not already exist
