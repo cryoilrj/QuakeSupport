@@ -13,7 +13,7 @@ This folder contains:
 2) stAlign.py: Script to align stream trace times
   - Packages required: obspy
   - If your sampling period > seconds decimal precision specified for your traces, the stream traces can have various time offsets < sampling period
-  - This is not a serious problem, as the stream trace times are still considered similar and the data length is the same
+  - These offsets are not a serious problem, as the stream trace times are still considered similar and the data length is the same
   - In fact, QuakeMigrate does the exact same shifting when processing the traces but it generates a message for each shift which clogs up the logs
   - Running this script prior to QuakeMigrate processing avoids the message spam in the logs by nominally aligning the stream trace times
   - Modify lines 20 and 21 depending on how you want to align your stream traces to a "master" starttime
@@ -23,10 +23,10 @@ This folder contains:
   - Packages required: numpy, obspy
   - QuakeMigrate requires the input traces to be separated by station-component and have specific filename formats (date_starttime_station_component)
   - Centering applied to the data to prevent underestimation/overestimation of the QM coalescence computation
-  - This example follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of mSEED data in 2-hr chunks
+  - Follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of mSEED data in 2-hr chunks
   - 2-hr chunks were used to avoid extremely large file sizes; increase the chunk size or remove altogether if data size is small
   - Script assumes the standard 3 components (one vertical, two horizontal), comment out/remove unused component variables if < 3 components
   - A trace's channel and component can be found using tr.stats.channel and tr.stats.component, respectively
-  - Ensure a QuakeMigrate/input/mSEED/year directory exists for the mSEED file being reformatted
+  - Ensure a corresponding QuakeMigrate/input/mSEED/year directory exists for the mSEED file being reformatted
   - TODO: Create inputs/mSEED/year-level directories if they do not already exist
   
