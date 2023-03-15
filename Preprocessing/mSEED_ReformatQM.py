@@ -1,10 +1,12 @@
 # Script to center data and reformat mSEED files for QuakeMigrate input
 
 # Import modules
+import warnings
 import os, glob
 import numpy as np
 from obspy import read
 
+warnings.simplefilter("ignore", UserWarning)
 # Change these only
 strms = sorted(
     glob.glob("/path/to/mSEED/folder/*day.mSEED*")
