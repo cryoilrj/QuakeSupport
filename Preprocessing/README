@@ -7,7 +7,7 @@ This folder contains:
   - Modify the download URL to match your specific IRIS URL, which should have a similar format
   - Provide your username and password in the download URL if required, otherwise remove "user:password@"
   - Code can be modified to download from different time windows and in different chunks
-  - 2-hr chunks (modifiable and removable) were used to avoid extremely large file sizes and to speed up the process through simultaneous downloads
+  - 2-hr chunks were used here to avoid extremely large file sizes and to speed up the process through simultaneous downloads
   - TODO: Close browser after download completes
 
 2) stAlign.py: Script to align stream trace times
@@ -24,7 +24,7 @@ This folder contains:
   - QuakeMigrate requires the input traces to be separated by components and have specific filename formats (date_starttime_station_component)
   - Centering applied to the data to prevent underestimation/overestimation of the QM coalescence computation
   - This example follows from our IRIS_mSEED_DL.py example, reformatting a day's worth of mSEED data in 2-hr chunks
-  - 2-hr chunks were used to avoid extremely large file sizes, increase the chunk size or remove altogether if sampling rate is low
+  - 2-hr chunks were used to avoid extremely large file sizes; increase the chunk size or remove altogether data size is small
   - This script assumes the standard 3 components (one vertical, two horizontal), comment out/remove unused component variables if < 3 components
   - A trace's channel and component can be found using tr.stats.channel and tr.stats.component, respectively
   - Ensure a QuakeMigrate/input/mSEED/year directory exists for the mSEED file being reformatted
