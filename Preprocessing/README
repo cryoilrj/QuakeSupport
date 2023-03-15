@@ -19,7 +19,7 @@ This folder contains:
   - Modify lines 20 and 21 depending on how you want to align your stream traces to a "master" starttime
   - TODO: Example of stream trace offsets
 
-3) mSEED_ReformatQM.py: Scrip to center data and reformat mSEED files for QuakeMigrate input
+3) mSEED_ReformatQM.py: Script to center data and reformat mSEED files for QuakeMigrate input
   - Packages required: numpy, obspy
   - QuakeMigrate requires the input traces to separated by components and a specific filename format (Date_Starttime_Station_Component)
   - We applied centering to the data to prevent underestimation and overestimation of the QM coalescence computation
