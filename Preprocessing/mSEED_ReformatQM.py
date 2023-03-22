@@ -11,7 +11,7 @@ warnings.simplefilter("ignore", UserWarning)
 strms = sorted(
     glob.glob("/path/to/mSEED/folder/*day.mSEED*")
 )  # Sorted list of mSEED files
-channels = ["HHZ", "HHE", "HHN"]  # Seismogram channels corresponding to components
+channels = ["HHZ", "HHN", "HHE"]  # Seismogram channels corresponding to components
 input_path_QM = "/path/to/QM/input/folder/year/"  # QuakeMigrate input folder (year)
 
 # Loop through mSEED files
@@ -55,14 +55,16 @@ for s in strms:
     )  # Reformatted mSEED destination folder
     chunk += 1
     if not os.path.isdir(dest):
-        os.mkdir(dest)  # Create lowest level directory if it does not already exist
+        os.makedirs(
+            dest
+        )  # Create all directories that do not already exist, typically julian_day and year
 
     # Loop through each station-channel trace and write reformatted mSEED files
     for c in comps_c:
         for trce in c:
-            s = trce.stats.station  # Station
+            sta = trce.stats.station  # Station
             cha = trce.stats.channel  # Channel
-            filename = year + jul + "_" + time_str + "_" + s + "_" + cha + ".mseed"
+            filename = year + jul + "_" + time_str + "_" + sta + "_" + cha + ".mseed"
             trce.write(dest + "/" + filename, format="MSEED")
 
-print("QM input files written")
+print("mSEED files reformatted for QM input")
