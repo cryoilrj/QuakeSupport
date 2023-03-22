@@ -27,6 +27,6 @@ This folder contains:
   - 2-hr chunks were used to avoid extremely large file sizes; increase the chunk size or remove altogether if data size is small
   - Script assumes the standard 3 components (one vertical, two horizontals), comment out/remove unused component variables if < 3 components
   - A trace's channel and component can be found using tr.stats.channel and tr.stats.component, respectively
-  - Ensure a corresponding QuakeMigrate/inputs/mSEED/year directory exists for the mSEED file being reformatted
+  - Any necessary directories that do not already exist will be created
   - Suppressed "userwarning" when the processing converts data dtype from integer to float; obspy automatically chooses the suitable encoding
-  - TODO: Create inputs/mSEED/year-level directories if they do not already exist
+  
