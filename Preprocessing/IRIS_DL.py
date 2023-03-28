@@ -6,8 +6,11 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Change these only
-# --------------------------------------------------------------------------
-user, pw = "penguin@psu.edu", "1234567890"  # Username and password
+# ------------------------------------------------------------------------------------------
+user, pw = (
+    "penguin@psu.edu",
+    "1234567890",
+)  # Username and password
 source = "service.iris.edu/ph5ws/dataselect/1/queryauth?"  # Download source
 time_string = (
     "starttime=2023-01-08T12%3A00%3A00.000000&"
@@ -21,7 +24,7 @@ network, station, loc, channel, fmt = (
     "GP%2A",  # "%2A" is url encoding for "*" and represents all stations starting with "GP"
     "mseed",  # Other options are "segy1", "segy2", and "sac"
 )
-# --------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
 
 # Generate download URL
 url_path = (
@@ -49,3 +52,16 @@ ser = Service(ChromeDriverManager().install())
 op = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=ser, options=op)  # Use the chrome browser
 driver.get(url_path)  # Access URL and download data
+
+# Check if downloads have completed
+driver.get("chrome://downloads")
+while True:
+    downloads = driver.execute_script(
+        "return document.querySelector('downloads-manager').shadowRoot.querySelector('#downloadsList').items;"
+    )
+    all_complete = all(d.get("state") == "COMPLETE" for d in downloads)
+    if all_complete:
+        break
+
+# Close the browser
+driver.quit()
