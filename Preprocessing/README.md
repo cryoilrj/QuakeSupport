@@ -1,7 +1,7 @@
 All scripts except QS_IRIS_DL.py are written to handle a day of data at a time in 12 x 2-hr chunks, and can be seamlessly applied in a pre-processing workflow under that condition. 2-hr chunks were used to avoid extremely large file sizes and speed up processing speed through simultaneous downloads. Users who prefer a different chunk size can make the appropriate modifications in the code.
 
 This folder contains, in sequential running order:
-1) [QS_IRIS_DL.py](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/QS_IRIS_DL.py) and [QS_IRIS_mass_DL.py](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/QS_IRIS_dayDL.py): Scripts to download seismic data (mSEED, SEGY, SAC) from IRIS  
+1) [QS_IRIS_DL.py](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/QS_IRIS_DL.py) and [QS_IRIS_dayDL.py](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/QS_IRIS_dayDL.py): Scripts to download seismic data (mSEED, SEGY, SAC) from IRIS  
 ▸ Packages required: selenium, webdriver-manager (used with ChromeDriver, download [here](https://chromedriver.chromium.org/downloads))  
 ▸ Makes use of the formatted IRIS download URL and selenium package to automate downloads  
 ▸ webdriver-manager automatically uses the current ChromeDriver so you only need to download ChromeDriver once  
