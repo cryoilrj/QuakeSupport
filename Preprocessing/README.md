@@ -16,7 +16,7 @@ This QuakeSupport subfolder contains three Python scripts each for both day and 
 ## 2) mSEED_streamAlign [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_mSEED_streamAlign_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_mSEED_streamAlign_custom.py) - Script to align mSEED stream trace times
 :snowflake: Package required: obspy  
 :snowflake: If your sampling period > seconds decimal precision of your traces, your stream traces may have time offsets < sampling period  
-:snowflake: These time offsets will not change your results as the all stream trace times remain within the same time window  
+:snowflake: These time offsets will not change your results as all the stream trace times remain within the same time window  
 :snowflake: QuakeMigrate performs its own stream trace alignment during runs, but outputs a long message for each trace that is realigned  
 :snowflake: To prevent these messages from clogging up your output logs, use this script to nominally align your stream trace times  
 :snowflake: Script assumes all traces in a single run have the same sampling frequency (e.g., 1000 Hz)   
