@@ -6,14 +6,14 @@ Within each script, you only need to make changes to lines demarcated by
 `------------------`  
 
 This QuakeSupport subfolder contains three Python scripts each for day and custom formats, in sequential running order:
-## 1) IRIS_DL [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_IRIS_DL_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_IRIS_DL_custom.py) - Script to download seismic data from IRIS
+## 1) IRIS_DL [day](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/day/QS_IRIS_DL_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/custom/QS_IRIS_DL_custom.py) - Script to download seismic data from IRIS
 :snowflake: Packages required: selenium, webdriver-manager (used with ChromeDriver, download [here](https://chromedriver.chromium.org/downloads))  
 :snowflake: Makes use of the formatted IRIS download URL and selenium package to automate downloads  
 :snowflake: webdriver-manager automatically uses the current ChromeDriver so you only need to download ChromeDriver once     
 :snowflake: To account for QuakeMigrate pre- and post-padding, add a buffer (e.g., 5 minutes) to your start and end times  
 :snowflake: Works for mSEED, SEGY, and SAC files
 
-## 2) mSEED_streamAlign [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_mSEED_streamAlign_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_mSEED_streamAlign_custom.py) - Script to align mSEED stream trace times
+## 2) mSEED_streamAlign [day](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/day/QS_mSEED_streamAlign_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/custom/QS_mSEED_streamAlign_custom.py) - Script to align mSEED stream trace times
 :snowflake: Package required: obspy  
 :snowflake: If your sampling period > seconds decimal precision of your traces, your stream traces may have time offsets < sampling period  
 :snowflake: These time offsets will not change your results as all the stream trace times remain within the same time window  
@@ -28,7 +28,7 @@ Before running the script:
 After running the script:
 ![Screenshot of an aligned stream](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/aligned_stream.png)
 
-## 3) mSEED_prepQM [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_mSEED_prepQM_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_mSEED_prepQM_custom.py) - Script to prepare mSEED files (zero-center and reformat) for QuakeMigrate input  
+## 3) mSEED_prepQM [day](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/day/QS_mSEED_prepQM_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/custom/QS_mSEED_prepQM_custom.py) - Script to prepare mSEED files (zero-center and reformat) for QuakeMigrate input  
 :snowflake: Packages required: numpy, obspy  
 :snowflake: QuakeMigrate input streams are separated by station and channel, with a specific filename format  
 :snowflake: Sample QuakeMigrate input stream filename (yearjd_starttime_station_channel): `2019003_235500_16611_GP1.mseed`  
