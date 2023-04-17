@@ -1,4 +1,4 @@
-# Script to download a day of seismic data in 12 x 2-hr chunks
+# Script to download a day of seismic data from IRIS in 12 x 2-hr chunks
 
 # Import modules
 import datetime
