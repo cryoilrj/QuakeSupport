@@ -1,23 +1,23 @@
-# Script to align stream trace times
+# Script to align mSEED stream trace times in 12 x 2-hr chunks
 
 # Import modules
-import sys
+import os, sys
 from glob import glob
 from obspy import read
 from obspy import UTCDateTime
 
 # Change these only
 # -------------------------------------------------------------------------------------
-strms = sorted(glob("/path/to/folder/*.mseed*"))  # List of mSEED files
+strms = sorted(glob("/path/to/folder/*.mseed*"))  # List of chronological mSEED files
 fs = 1000  # Trace sampling frequency, in Hz
-chunk = 7200  # Chunk size of streams, in seconds
+chunk = 7200  # Chunk size of streams, in seconds (7200 s == 2 hrs)
 # List of original start times in UTCDateTime
 starttimes = [UTCDateTime("2023-01-30T23:55:00.000000") + c * chunk for c in range(12)]
 # -------------------------------------------------------------------------------------
 
 # Loop through mSEED files
 if len(strms) != len(starttimes):
-    print("Error: listed number of mSEED files and original start times do not match")
+    print("Error: number of mSEED files and original start times do not match")
     sys.exit(1)
 
 # Align traces to original start time
@@ -35,10 +35,16 @@ for s in range(len(strms)):
             print(tr)
             sys.exit(1)
 
-    # Write aligned mSEED files
+    # Write aligned mSEED files into an "aligned" subfolder
     print("Indexed time shifts:", [(i, ts) for i, ts in enumerate(shifts)])
     print(strm.__str__(extended=True), "\n")
     splitstrm = strms[s].split("/")
-    strm.write("/".join(splitstrm[:-1]) + "/aligned_" + splitstrm[-1], format="MSEED")
+    if not os.path.isdir("/".join(splitstrm[:-1]) + "/aligned"):
+        os.makedirs(
+            "/".join(splitstrm[:-1]) + "/aligned"
+        )  # Create all directories that do not already exist
+    strm.write(
+        "/".join(splitstrm[:-1]) + "/aligned/aligned_" + splitstrm[-1], format="MSEED"
+    )
 
 print("Stream trace times aligned")
