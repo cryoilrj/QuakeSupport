@@ -14,7 +14,7 @@ user, pw = (
 source = "service.iris.edu/ph5ws/dataselect/1/queryauth?"  # Download source
 # List of lists of time windows, with each sublist containing a start and end time
 time_windows = [
-    ["2019-01-03T23:55:00.000000", "2019-01-04T01:55:00.000000"],
+    ["2019-01-03T23:55:00.000000", "2019-01-04T02:05:00.000000"],
     ["2023-05-05T01:00:00.000000", "2023-05-05T01:20:00.000000"],
     ["2019-01-23T09:23:00.000000", "2019-01-23T10:00:00.000000"],
 ]  # Remember to add a buffer (e.g., ±5 mins) to the start and end times
