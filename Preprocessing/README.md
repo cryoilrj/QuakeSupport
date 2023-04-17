@@ -17,11 +17,11 @@ This QuakeSupport subfolder contains three Python scripts for both day and custo
 :snowflake: Package required: obspy  
 :snowflake: If your sampling period > seconds decimal precision of your traces, your stream traces may have time offsets < sampling period  
 :snowflake: These time offsets will not change your results as the all stream trace times remain within the same time window  
-:snowflake: QuakeMigrate performs its own stream trace alignment during runs, but outputs a long message for each trace that is re-aligned  
+:snowflake: QuakeMigrate performs its own stream trace alignment during runs, but outputs a long message for each trace that is realigned  
 :snowflake: To prevent these messages from clogging up your output logs, use this script to nominally align your stream trace times  
 :snowflake: Script assumes all traces in a single run have the same sampling frequency (e.g., 1000 Hz)   
 :snowflake: If you have modified this script to work with SEGY and/or SAC files, please submit a pull request to help others!  
-:snowflake: Below is an example of a misaligned stream being re-aligned using this script (original start time `2019-01-03T23:55:00.000000`)
+:snowflake: Below is an example of a misaligned stream being realigned using this script (original start time `2019-01-03T23:55:00.000000`)
 
 Before running the script:
 ![Screenshot of a misaligned stream](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/misaligned_stream.png)  
