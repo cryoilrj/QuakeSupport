@@ -36,7 +36,7 @@ After running the script:
 :snowflake: Script outputs the prepared QuakeMigrate input mSEED files into the QuakeMigrate input year folder (`input_path_QM`)  
 :snowflake: The QuakeMigrate input year folder (`input_path_QM`) assumes you have the QuakeMigrate repository on your machine  
 :snowflake: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate)  
-:snowflake: Sample QuakeMigrate input year folder path: `"./QuakeMigrate/examples/Icequake_Rutford/inputs/mSEED/2023/"`  
+:snowflake: Sample QuakeMigrate input year folder path: `"Home/QuakeMigrate/examples/PenguinGlacier/inputs/mSEED/2023/"`  
 :snowflake: Script assumes the standard 3 channels (1 x vertical, 2 x horizontal), comment out unused channels if < 3 channels  
 :snowflake: A trace's channel can be found using `tr.stats.channel`  
 :snowflake: If you have modified this script to work with SEGY and/or SAC files, please submit a pull request to help others!
