@@ -28,7 +28,7 @@ Before running the script:
 After running the script:
 ![Screenshot of an aligned stream](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/aligned_stream.png)
 
-## 3) mSEED_prepQM [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_mSEED_prepQM_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_mSEED_prepQM_custom.py) - Script to prepare mSEED files (zero-center and re-format) for QuakeMigrate input  
+## 3) mSEED_prepQM [day](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/day/QS_mSEED_prepQM_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/Preprocessing/custom/QS_mSEED_prepQM_custom.py) - Script to prepare mSEED files (zero-center and reformat) for QuakeMigrate input  
 :snowflake: Packages required: numpy, obspy  
 :snowflake: QuakeMigrate input streams are separated by station and component, with a specific filename format  
 :snowflake: Sample QuakeMigrate input streams filename (yearjd_starttime_station_component): `2019003_235500_16611_GP1.mseed`  
