@@ -32,7 +32,7 @@ After running the script:
 :snowflake: Packages required: numpy, obspy  
 :snowflake: QuakeMigrate input streams are separated by station and channel, with a specific filename format  
 :snowflake: Sample QuakeMigrate input stream filename (yearjd_starttime_station_channel): `2019003_235500_16611_GP1.mseed`  
-:snowflake: Each individual trace is zero-centered to avoid inaccurate coalescence values in QuakeMigrate  
+:snowflake: Each trace is zero-centered to avoid inaccurate coalescence values in QuakeMigrate  
 :snowflake: Script outputs the prepared QuakeMigrate input mSEED files into the QuakeMigrate input year folder (`input_path_QM`)  
 :snowflake: The QuakeMigrate input year folder (`input_path_QM`) assumes you have the QuakeMigrate repository on your machine  
 :snowflake: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate)  
