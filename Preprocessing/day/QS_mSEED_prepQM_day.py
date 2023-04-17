@@ -13,7 +13,8 @@ warnings.simplefilter("ignore", UserWarning)
 
 # Change these only
 # -----------------------------------------------------------------------------------
-strms = sorted(glob("/path/to/folder/*.mSEED*"))  # List of chronological mSEED files
+# List of chronological mSEED files
+strms = sorted(glob("/path/to/folder/aligned/*.mseed*"))
 channels = ["HHZ", "HHN", "HHE"]  # Seismogram channels
 input_path_QM = "/path/to/QM/input/folder/year/"  # QuakeMigrate input year folder
 # -----------------------------------------------------------------------------------
