@@ -60,7 +60,7 @@ for s in strms:
 
     # Create QuakeMigrate-formatted input mSEED destination folders
     dests = []
-    label = strms[s].split("/")[-1].split(".")[0]
+    label = s.split("/")[-1].split(".")[0]
     jul_starttime = trc.stats.starttime.strftime("%j")
     jul_endtime = trc.stats.endtime.strftime("%j")
     if jul_starttime == jul_endtime:
