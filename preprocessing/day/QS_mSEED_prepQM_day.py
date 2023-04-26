@@ -12,12 +12,12 @@ from obspy import read
 warnings.simplefilter("ignore", UserWarning)
 
 # Change these only
-# -----------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------
 # List of chronological mSEED files
 strms = sorted(glob("/path/to/folder/aligned/*.mseed*"))
 channels = ["HHZ", "HHN", "HHE"]  # Seismogram channels
 input_path_QM = "/path/to/QM/input/folder/year/"  # QuakeMigrate input year folder
-# -----------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------
 
 # Loop through mSEED files
 chunk = 0  # Index of day chunks
