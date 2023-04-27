@@ -67,7 +67,7 @@ for s in strms:
         df = input_path_QM + jul + "_" + label
         dests.append(df)
     else:
-        # Add buffer folders if mSEED data covers more than one day
+        # Add buffer mSEED folders if mSEED data covers more than one day
         df_startBuffer = input_path_QM + jul_starttime + "_" + label + "_buffer"
         df_endBuffer = input_path_QM + jul_endtime + "_" + label + "_buffer"
         dests.extend([df_startBuffer, df_endBuffer])
