@@ -32,7 +32,7 @@ This subfolder contains three Python scripts:
 
 ## 2) [QM_run](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_run.py) - Script to run QuakeMigrate
 :snowman: Sequentially runs all the QuakeMigrate scripts (`LUT`, `detect`, `trigger`, and `locate`)  
-:snowman: If running in day format, ensure this script is in the same folder as QM_run_day  
+:snowman: If running in day format, ensure this script is in the same run folder as QM_run_day  
 :snowman: If running in custom format, you only need this script and can ignore the other two scripts in this subfolder  
 :snowman: Script only runs the QuakeMigrate scripts, and assumes you have tuned your QuakeMigrate scripts appropriately before running them  
 :snowman: For guidance on parameter tuning for the QuakeMigrate scripts, refer to their highly comprehensive [user manual](https://quakemigrate.readthedocs.io/_/downloads/en/stable/pdf/) (_Updated Apr 10, 2023_)
@@ -40,5 +40,5 @@ This subfolder contains three Python scripts:
 ## 3) [QM_reset](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_reset.py) - Script to reset QuakeMigrate scripts
 :snowman: Resets key parameters in QuakeMigrate scripts after each 2-hour run in QS_run_day in preparation for the next iteration or another day run  
 :snowman: Resets the `detect`, `trigger`, and `locate` scripts  
-:snowman: Only required if running in day format, ensure this script is in the same folder as QM_run_day  
+:snowman: Only required if running in day format, ensure this script is in the same run folder as QM_run_day  
 :snowman: Can also be used/modified individually to act as a failsafe to restore QuakeMigrate scripts back to a default or "save" state
