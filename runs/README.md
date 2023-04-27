@@ -31,7 +31,7 @@ This QuakeSupport subfolder contains three Python scripts:
 :snowman: Modifying QuakeMigrate source code to work with chunk folders (`012_0`, `012_1`) is possible, but beyond the scope of this package
 
 ## 2) [QM_run](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_run.py) - Script to run QuakeMigrate
-:snowman: Sequentially runs all the QuakeMigrate scripts (`LUT`, `detect`, `trigger`, and `locate`) in one script  
+:snowman: Sequentially runs all the QuakeMigrate scripts (`LUT`, `detect`, `trigger`, and `locate`)  
 :snowman: If running in day format, ensure this script is in the same folder as QM_run_day  
 :snowman: If running in custom format, you only need this script and can ignore the other two scripts in this subfolder  
 :snowman: Script only runs the QuakeMigrate scripts, and assumes you have tuned your QuakeMigrate scripts appropriately before running them  
