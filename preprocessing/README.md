@@ -5,7 +5,7 @@ Within each script, you only need to make changes to lines demarcated by two das
 `Makes changes here`  
 `------------------`  
 
-This QuakeSupport subfolder contains three Python scripts each for day and custom formats, in sequential running order:
+This subfolder contains three Python scripts each for day and custom formats, in sequential running order:
 ## 1) IRIS_DL [day](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/day/QS_IRIS_DL_day.py) and [custom](https://github.com/cryoilrj/QuakeSupport/blob/main/preprocessing/custom/QS_IRIS_DL_custom.py) - Script to download seismic data from IRIS
 :snowflake: Packages required: selenium, webdriver-manager (used with ChromeDriver, download [here](https://chromedriver.chromium.org/downloads))  
 :snowflake: Makes use of the formatted IRIS download URL and selenium package to automate downloads  
