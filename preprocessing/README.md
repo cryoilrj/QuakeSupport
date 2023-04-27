@@ -1,4 +1,4 @@
-You have the option of preparing your data for QuakeMigrate input in either a 12 x 2-hour chunks daily format (day folder) or for a specific time window(s) (custom folder) - either option can be seamlessly applied in a preprocessing workflow. 2-hour chunks were chosen to avoid extremely large file sizes to speed up processing. Users may modify the chunk size, with corresponding script modifications, to fit their needs.
+You have the option of preparing your data for QuakeMigrate input in either a 12 x 2-hour chunks day format (day folder) or for a specific time window(s) (custom folder) - either option can be seamlessly applied in a preprocessing workflow. 2-hour chunks were chosen to avoid extremely large file sizes to speed up processing. Users may modify the chunk size, with corresponding script modifications, to fit their needs.
 
 Within each script, you only need to make changes to lines demarcated by two dashed lines:  
 `------------------`  
