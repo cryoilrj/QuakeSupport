@@ -1,9 +1,9 @@
 You have the option of running QuakeMigrate in either a 12 x 2-hour chunks day format or for a specific time window (custom format). The QuakeMigrate input data that have been prepared using the QuakeSupport preprocessing scripts work best here, and can be combined to extend the workflow. 2-hour chunks strike a good balance between the read-write speed and file optimization. Users may modify the chunk size, with corresponding script (both preprocessing and runs) modifications, to fit their needs.
 
 Within each script, you only need to make changes to lines demarcated by two dashed lines:  
-`------------------`  
-`Makes changes here`  
-`------------------`
+`-----------------`  
+`Make changes here`  
+`-----------------`
 
 :heavy_exclamation_mark: You must have the QuakeMigrate repository downloaded on your machine/HPC AND the QuakeMigrate package installed  
 :grey_exclamation: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate), which also contains installation instructions
