@@ -44,7 +44,7 @@ for c in range(12):
     chunk_endtime = f"{UTCDateTime(chunk_starttime) + timedelta(hours=2)}"  # End time
     chunk_run_name = f"{qm_run_name}_{year}_{jd}_{c}"  # Run name
 
-    # Apply a 4 minute buffer to start and end times of detect script
+    # Apply a 4-minute buffer to start and end times of detect script
     buffer_starttime = f"{UTCDateTime(chunk_starttime) - timedelta(minutes=4)}"
     buffer_endtime = f"{UTCDateTime(chunk_endtime) + timedelta(minutes=4)}"
 
