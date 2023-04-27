@@ -11,7 +11,7 @@ If you are running in day format, you will need all three scripts. If you are ru
 :grey_exclamation: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate), which also contains installation instructions
 
 This subfolder contains three Python scripts:
-## 1) [QM_run_day](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_run_day.py) - Script to run QuakeMigrate in 12 x 2-hour chunks
+## 1) [QM_run_day](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/runs/QS_QM_run_day.py) - Script to run QuakeMigrate in 12 x 2-hour chunks
 :snowman: Package required: obspy  
 :snowman: Performs 2-hour runs sequentially, modifying the QuakeMigrate scripts run times and output run name before each run  
 :snowman: Modifies the `detect`, `trigger`, and `locate` scripts  
@@ -30,14 +30,14 @@ This subfolder contains three Python scripts:
 :green_book: 3. Time your runs to ensure they do not access the same Julian day folder at the same time (difficult to time - not recommended)  
 :snowman: Modifying QuakeMigrate source code to work with chunk folders (`012_0`, `012_1`) is possible, but beyond the scope of this package
 
-## 2) [QM_run](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_run.py) - Script to run QuakeMigrate
+## 2) [QM_run](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/runs/QS_QM_run.py) - Script to run QuakeMigrate
 :snowman: Sequentially runs all the QuakeMigrate scripts (`LUT`, `detect`, `trigger`, and `locate`)  
 :snowman: If running in day format, ensure this script is in the same run folder as QM_run_day  
 :snowman: If running in custom format, you only need this script and can ignore the other two scripts in this subfolder  
 :snowman: Script only runs the QuakeMigrate scripts, and assumes you have tuned your QuakeMigrate scripts appropriately before running them  
 :snowman: For guidance on parameter tuning for the QuakeMigrate scripts, refer to their highly comprehensive [user manual](https://quakemigrate.readthedocs.io/_/downloads/en/stable/pdf/) (_Updated Apr 10, 2023_)
 
-## 3) [QM_reset](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_reset.py) - Script to reset QuakeMigrate scripts
+## 3) [QM_reset](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/runs/QS_QM_reset.py) - Script to reset QuakeMigrate scripts
 :snowman: Resets key parameters in QuakeMigrate scripts after each 2-hour run in QS_run_day in preparation for the next iteration or another day run  
 :snowman: Resets the `detect`, `trigger`, and `locate` scripts  
 :snowman: Only required if running in day format, ensure this script is in the same run folder as QM_run_day  
