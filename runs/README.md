@@ -15,7 +15,7 @@ This subfolder contains three Python scripts:
 :snowman: Package required: obspy  
 :snowman: Performs 2-hour runs sequentially, modifying the QuakeMigrate scripts run times and output run name before each run  
 :snowman: Modifies the `detect`, `trigger`, and `locate` scripts  
-:snowman: Place this script in your QuakeMigrate examples folder for your study site ([like this](https://github.com/QuakeMigrate/QuakeMigrate/tree/master/examples/Icequake_Rutford))  
+:snowman: Place this script in your QuakeMigrate run folder for your study site ([example](https://github.com/QuakeMigrate/QuakeMigrate/tree/master/examples/Icequake_Rutford))  
 :snowman: Script requires the QM_run and QM_reset scripts to be present in that same folder  
 :snowman: The appropriate mSEED folder(s) is unlocked and relocked (i.e., renamed) to accomodate the corresponding run time window  
 :snowman: Only one chunk folder per Julian day can be unlocked at any time (e.g., `012_0` and `012_1` both cannot be renamed to `012`)  
