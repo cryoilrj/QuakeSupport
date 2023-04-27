@@ -1,4 +1,4 @@
-# Script to prepare mSEED files for QuakeMigrate input in 12 x 2-hr chunks
+# Script to prepare mSEED files for QuakeMigrate input in 12 x 2-hour chunks
 
 # Import modules
 import os
