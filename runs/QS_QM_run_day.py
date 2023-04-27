@@ -1,4 +1,4 @@
-# Script to run QuakeMigrate in 12 x 2-hr chunks
+# Script to run QuakeMigrate in 12 x 2-hour chunks
 
 # Import modules
 import time
@@ -68,11 +68,11 @@ for c in range(12):
         time.sleep(1)  # Enable modified scripts to be sequentially ordered
 
     try:
-        # Unlock the appropriate mSEED file(s) for QuakeMigrate to read
+        # Unlock the appropriate mSEED folder(s) for QuakeMigrate to read
         locked = f"{jd}_{c}"
-        os.chdir(run_path + "/inputs/mSEED/" + year)  # Navigate to mSEED folder
-        os.rename(locked, jd)  # Unlock target mSEED file
-        # Unlock buffer mSEED file (if applicable)
+        os.chdir(run_path + "/inputs/mSEED/" + year)  # Navigate to mSEED year folder
+        os.rename(locked, jd)  # Unlock target mSEED folder
+        # Unlock buffer mSEED folder (if applicable)
         if c == 0:
             os.rename(f"{prev_jd}_buffer", prev_jd)
         elif c == 11:
@@ -82,12 +82,12 @@ for c in range(12):
         os.chdir(run_path)  # Navigate back to QuakeMigrate run folder
         subprocess.run(["python", "QS_QM_run.py"])  # Run QuakeMigrate scripts
 
-    # Failsafe ensures mSEED files and scripts are always reset
+    # Failsafe ensures mSEED folders and scripts are always reset
     finally:
-        # Relock the mSEED file(s) after QuakeMigrate is done reading
-        os.chdir(run_path + "/inputs/mSEED/" + year)  # Navigate to mSEED folder
-        os.rename(jd, locked)  # Relock target mSEED file
-        # Relock buffer mSEED file (if applicable)
+        # Relock the mSEED folder(s) after QuakeMigrate is done reading
+        os.chdir(run_path + "/inputs/mSEED/" + year)  # Navigate to mSEED year folder
+        os.rename(jd, locked)  # Relock target mSEED folder
+        # Relock buffer mSEED folder (if applicable)
         if c == 0:
             os.rename(prev_jd, f"{prev_jd}_buffer")
         elif c == 11:
