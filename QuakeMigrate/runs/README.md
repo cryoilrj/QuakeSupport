@@ -18,7 +18,7 @@ This subfolder contains three Python scripts. If you are running in day format, 
 :snowman: The mSEED folder(s) containing files for the corresponding time window is unlocked (i.e., renamed) for QuakeMigrate to read  
 :snowman: As an example of unlocking, `012_0` is renamed to `012` for QuakeMigrate to read since it only reads files in Julian day format  
 :snowman: The mSEED folder(s) is relocked after its run completion, as only one chunk folder per Julian day can be unlocked at any time  
-:snowman: Relocking is similarly renaming the folder from Julian day (`012`) back to its original Julian day + chunk format (`012_0`)  
+:snowman: Relocking is similarly renaming the mSEED folder from Julian day (`012`) back to its original Julian day_chunk format (`012_0`)  
 :snowman: Running multiple instances of this script to perform runs for different days concurrently is recommended to speed up your runs  
 :snowman: There are conditions and restrictions to perform runs for different days concurrently:  
 :snowman: 1. Each run requires its own specific copy of the three `runs` and QuakeMigrate scripts (`LUT`, `detect`, `trigger`, `locate`)  
