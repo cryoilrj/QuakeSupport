@@ -10,7 +10,7 @@ If you are running in day format, you will need all three scripts. If you are ru
 :heavy_exclamation_mark: You must have the QuakeMigrate repository on your machine/HPC cluster AND have installed the QuakeMigrate package  
 :grey_exclamation: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate), which also contains installation instructions
 
-This QuakeSupport subfolder contains three Python scripts:
+This subfolder contains three Python scripts:
 ## 1) [QM_run_day](https://github.com/cryoilrj/QuakeSupport/blob/main/runs/QS_QM_run_day.py) - Script to run QuakeMigrate in 12 x 2-hour chunks
 :snowman: Package required: obspy  
 :snowman: Performs 2-hour runs sequentially, modifying the QuakeMigrate scripts run times and output run name before each run  
