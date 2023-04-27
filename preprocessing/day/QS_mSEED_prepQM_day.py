@@ -65,12 +65,12 @@ for s in strms:
     if chunk != 0 and chunk != len(strms) - 1:
         df = input_path_QM + jul + "_" + str(chunk)
         dests.append(df)
-    elif chunk == 0:  # Add buffer folder at the start of the day
+    elif chunk == 0:  # Add buffer mSEED folder at the start of the day
         df_buffer = input_path_QM + jul + "_buffer"
         jul_endtime = trc.stats.endtime.strftime("%j")
         df = input_path_QM + jul_endtime + "_" + str(chunk)
         dests.extend([df_buffer, df])
-    elif chunk == len(strms) - 1:  # Add buffer folder at the end of the day
+    elif chunk == len(strms) - 1:  # Add buffer mSEED folder at the end of the day
         df = input_path_QM + jul + "_" + str(chunk)
         jul_endtime = trc.stats.endtime.strftime("%j")
         df_buffer = input_path_QM + jul_endtime + "_buffer"

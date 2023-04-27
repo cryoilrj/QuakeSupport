@@ -14,7 +14,7 @@ user, pw = (
 )  # Username and password
 source = "service.iris.washington.edu/ph5ws/dataselect/1/queryauth?"  # Download source
 today = datetime.datetime(2019, 1, 12)  # Target day date
-# Start and end times of first chunk with a 5 minute buffer
+# Start and end times of first chunk with a 5-minute buffer
 # Start time = 2019-01-12T00:00:00.000000, End time = 2019-01-12T02:00:00.000000
 time_string = (
     "starttime=2019-01-11T23%3A55%3A00.000000&"
