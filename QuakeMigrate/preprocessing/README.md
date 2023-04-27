@@ -18,9 +18,9 @@ This subfolder contains three Python scripts each for day and custom formats, in
 :snowflake: If your sampling period > seconds decimal precision of your traces, your stream traces may have time offsets < sampling period   
 :snowflake: QuakeMigrate performs its own stream trace alignment during runs, but outputs a long message for each trace that is realigned  
 :snowflake: To prevent these messages from clogging up your output logs, use this script to nominally align your stream trace times  
-:snowflake: Script assumes all traces in a single run have the same sampling frequency (e.g., 1000 Hz)   
+:snowflake: Script assumes all traces in a single run have the same sampling frequency (e.g., `1000 Hz`)   
 :snowflake: If you have modified this script to work with SEGY and/or SAC files, please submit a pull request to help others!  
-:snowflake: Below is an example of a misaligned stream being realigned using this script (original start time `2019-01-03T23:55:00.000000`)
+:snowflake: Below is an example of a misaligned stream being realigned using this script (original start time: `2019-01-03T23:55:00.000000`)
 
 Before running the script:
 ![Screenshot of a misaligned stream](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/preprocessing/misaligned_stream.png)  
@@ -31,9 +31,9 @@ After running the script:
 :snowflake: Packages required: numpy, obspy  
 :snowflake: QuakeMigrate input streams are separated by station and channel, with a specific filename format  
 :snowflake: Sample QuakeMigrate input stream filename (yearjd_starttime_station_channel): `2019003_235500_16611_GP1.mseed`  
-:snowflake: Each trace is zero-centered to avoid inaccurate coalescence values in QuakeMigrate  
+:snowflake: Each trace is zero-centered to improve the accuracy of coalescence values in QuakeMigrate  
 :snowflake: Script outputs the prepared QuakeMigrate input mSEED files into the QuakeMigrate input year folder (`input_path_QM`)  
-:snowflake: The QuakeMigrate input year folder (`input_path_QM`) assumes you have the QuakeMigrate repository on your machine  
+:snowflake: `input_path_QM` and creation of the mSEED folders assume you have the QuakeMigrate repository downloaded on your machine  
 :snowflake: Clone the QuakeMigrate repository or download the source code from their [GitHub](https://github.com/QuakeMigrate/QuakeMigrate)  
 :snowflake: Sample QuakeMigrate input year folder path: `"Home/QuakeMigrate/examples/PenguinGlacier/inputs/mSEED/2023/"`  
 :snowflake: Script assumes the standard 3 channels (1 x vertical, 2 x horizontal), comment out unused channels if < 3 channels  
