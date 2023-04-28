@@ -14,6 +14,8 @@ This subfolder contains three Python scripts. If you are running in day format, 
 :snowman: Performs 2-hour runs sequentially, modifying the run times and run name of the QuakeMigrate scripts before each run  
 :snowman: Place this script in your QuakeMigrate run folder for your specific study site ([example](https://github.com/QuakeMigrate/QuakeMigrate/tree/master/examples/Icequake_Rutford))  
 :snowman: Script requires the `QM_run` and `QM_reset` scripts to be present in the same run folder  
+:snowman: Provide the [absolute path](https://linuxhandbook.com/absolute-vs-relative-path/) for `run_path` (e.g., `/home/QuakeMigrate/examples/PenguinGlacier`)  
+:snowman: `qm_run_name` must match `reset_run_name` in `QM_reset`  
 :snowman: Modifies the `detect`, `trigger`, and `locate` scripts  
 :snowman: The mSEED folder(s) containing files for the corresponding time window is unlocked (i.e., renamed) for QuakeMigrate to read  
 :snowman: As an example of unlocking, `012_0` is renamed to `012` for QuakeMigrate to read since it only reads files in Julian day format  
@@ -40,6 +42,7 @@ This subfolder contains three Python scripts. If you are running in day format, 
 ## 3. [`QM_reset`](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/runs/QS_QM_reset.py) - Script to reset QuakeMigrate scripts
 :snowman: Resets parameters in QuakeMigrate scripts after each 2-hour run in `QM_run_day` in preparation for the next iteration or another day run  
 :snowman: Only required if running in day format - place this script in the same run folder as `QM_run_day`  
+:snowman: `reset_run_name` must match `qm_run_name` in `QM_run_day`  
 :snowman: The parameters being reset by this script are the run times and run name of the QuakeMigrate scripts  
 :snowman: Resets the `detect`, `trigger`, and `locate` scripts  
 :snowman: Script can be used/modified individually to act as a failsafe to restore QuakeMigrate scripts back to a default or "save" state
