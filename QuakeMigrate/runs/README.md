@@ -24,10 +24,10 @@ This subfolder contains three Python scripts. If you are running in day format, 
 :snowman: 1. Each run requires its own specific copy of the three `runs` and QuakeMigrate scripts (`LUT`, `detect`, `trigger`, `locate`)  
 :snowman: 2. Due to buffer folders, the runs for the first and last 2 hours of each day also require access to an adjacent Julian day folder  
 :warning: If two runs try to unlock the same Julian day folder, the later run raises a `FileExistsError` exception  
-:warning: There are three different solutions to avoid this problem, from easiest to hardest:  
-:warning: 1. Only run non-adjacent days concurrently (e.g., run the even days together, then the odd days together)  
-:warning: 2. Create separate `input` folders for each day and direct the `QM_run_day`, `detect`, `trigger`, and `locate` scripts to it  
-:warning: 3. Time your runs to ensure they do not access the same Julian day folder at the same time (hard to time - not recommended)
+:warning: Modifying the QuakeMigrate source code for how it reads files is a possible but likely complex solution  
+:warning: There are two simpler solutions available to avoid this problem:  
+:warning: 1. Only perform runs for non-adjacent days concurrently (e.g., run the even days together, then the odd days together)  
+:warning: 2. Create an `inputs` folder for each day which the corresponding `QM_run_day`, `detect`, and `locate` scripts are redirected to
 
 ## 2. [`QM_run`](https://github.com/cryoilrj/QuakeSupport/blob/main/QuakeMigrate/runs/QS_QM_run.py) - Script to run QuakeMigrate
 :snowman: Sequentially runs all the QuakeMigrate scripts (`LUT`, `detect`, `trigger`, and `locate`)  
