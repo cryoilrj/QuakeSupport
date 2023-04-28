@@ -14,6 +14,7 @@ reset_scripts = [
     "penguin_locate.py",  # Locate script
 ]
 # ---------------------------------------------------------
+reset_run_name += "_QS"  # Add unique identifier to run name
 
 # Reset keywords
 keywords = ["run_name =", "starttime =", "endtime ="]
@@ -34,4 +35,4 @@ for rs in reset_scripts:
             print(line, end="")
     time.sleep(1)  # Enable reset scripts to be sequentially ordered
 
-print("Detect, trigger, and locate scripts reset")
+print("Detect, trigger, and locate scripts reset\n")

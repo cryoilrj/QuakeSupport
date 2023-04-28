@@ -20,6 +20,7 @@ qm_scripts = [
 qm_run_name = "penguin_example"  # Default QuakeMigrate run name
 run_path = "/path/to/QM/run/examples/folder"  # Path to run folder
 # -------------------------------------------------------------------
+qm_run_name += "_QS"  # Add unique identifier to run name
 
 # Default QuakeMigrate start and end times
 qm_starttime = "2023-01-30T00:00:00.000000Z"  # Start time
