@@ -1,0 +1,4370 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.2">
+  <Source>IRIS-DMC</Source>
+  <Sender>IRIS-DMC</Sender>
+  <Module>IRIS WEB SERVICE: ph5ws-station | version: 1.1.8</Module>
+  <ModuleURI>http://service.iris.edu/ph5ws/station/1/query?starttime=2018-12-25T00%3A27%3A00.000000&amp;endtime=2018-12-25T00%3A27%3A18.000000&amp;network=5B&amp;station=11111%2C11121%2C11131%2C21112%2C21113%2C21122%2C21123%2C21124%2C21132%2C21133%2C21134%2C21142%2C21143&amp;level=response</ModuleURI>
+  <Created>2024-11-05T19:47:40.227600Z</Created>
+  <Network xmlns:ns0="http://www.iris.edu/xml/station/1/iris" code="5B" startDate="2018-01-01T00:00:00.000000Z" endDate="2019-12-31T23:59:59.999900Z" restrictedStatus="open" ns0:PH5ReportNum="19-004">
+    <Description>Rutford Ice Stream Cooperative Research Program with British Antarctic Survey (Rutford Ice Stream)</Description>
+    <Identifier type="DOI">10.7914/SN/5B_2018
+   </Identifier>
+    <TotalNumberStations>157</TotalNumberStations>
+    <SelectedNumberStations>13</SelectedNumberStations>
+    <Station code="11111" startDate="2018-12-11T18:15:35.000000Z" endDate="2019-01-14T08:50:35.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.166682</Latitude>
+      <Longitude unit="DEGREES">-84.06288</Longitude>
+      <Elevation>321.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-11T18:15:35.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-11T18:15:35.000000Z" endDate="2019-01-14T08:50:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="11111">
+        <Latitude unit="DEGREES">-78.166682</Latitude>
+        <Longitude unit="DEGREES">-84.06288</Longitude>
+        <Elevation>321.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11111</SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-11T18:15:35.000000Z" endDate="2019-01-14T08:50:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="11111">
+        <Latitude unit="DEGREES">-78.166682</Latitude>
+        <Longitude unit="DEGREES">-84.06288</Longitude>
+        <Elevation>321.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11111</SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-11T18:15:35.000000Z" endDate="2019-01-14T08:50:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="11111">
+        <Latitude unit="DEGREES">-78.166682</Latitude>
+        <Longitude unit="DEGREES">-84.06288</Longitude>
+        <Elevation>321.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11111</SerialNumber>
+          <InstallationDate>2018-12-11T18:15:35.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T08:50:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="11121" startDate="2018-12-11T20:43:46.000000Z" endDate="2019-01-06T09:04:25.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.170339</Latitude>
+      <Longitude unit="DEGREES">-84.054679</Longitude>
+      <Elevation>322.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-11T20:43:46.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-11T20:43:46.000000Z" endDate="2019-01-06T09:04:25.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="11121">
+        <Latitude unit="DEGREES">-78.170339</Latitude>
+        <Longitude unit="DEGREES">-84.054679</Longitude>
+        <Elevation>322.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11121</SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-11T20:43:46.000000Z" endDate="2019-01-06T09:04:25.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="11121">
+        <Latitude unit="DEGREES">-78.170339</Latitude>
+        <Longitude unit="DEGREES">-84.054679</Longitude>
+        <Elevation>322.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11121</SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-11T20:43:46.000000Z" endDate="2019-01-06T09:04:25.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="11121">
+        <Latitude unit="DEGREES">-78.170339</Latitude>
+        <Longitude unit="DEGREES">-84.054679</Longitude>
+        <Elevation>322.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11121</SerialNumber>
+          <InstallationDate>2018-12-11T20:43:46.000000Z</InstallationDate>
+          <RemovalDate>2019-01-06T09:04:25.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="11131" startDate="2018-12-11T20:26:58.000000Z" endDate="2019-01-15T08:32:47.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.174178</Latitude>
+      <Longitude unit="DEGREES">-84.045946</Longitude>
+      <Elevation>325.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-11T20:26:58.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-11T20:26:58.000000Z" endDate="2019-01-15T08:32:47.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="11131">
+        <Latitude unit="DEGREES">-78.174178</Latitude>
+        <Longitude unit="DEGREES">-84.045946</Longitude>
+        <Elevation>325.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11131</SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-11T20:26:58.000000Z" endDate="2019-01-15T08:32:47.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="11131">
+        <Latitude unit="DEGREES">-78.174178</Latitude>
+        <Longitude unit="DEGREES">-84.045946</Longitude>
+        <Elevation>325.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11131</SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-11T20:26:58.000000Z" endDate="2019-01-15T08:32:47.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="11131">
+        <Latitude unit="DEGREES">-78.174178</Latitude>
+        <Longitude unit="DEGREES">-84.045946</Longitude>
+        <Elevation>325.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X11131</SerialNumber>
+          <InstallationDate>2018-12-11T20:26:58.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T08:32:47.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21112" startDate="2018-12-13T21:31:50.000000Z" endDate="2019-01-07T15:12:03.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.164565</Latitude>
+      <Longitude unit="DEGREES">-84.044596</Longitude>
+      <Elevation>327.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T21:31:50.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T21:31:50.000000Z" endDate="2019-01-07T15:12:03.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21112">
+        <Latitude unit="DEGREES">-78.164565</Latitude>
+        <Longitude unit="DEGREES">-84.044596</Longitude>
+        <Elevation>327.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21112</SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T21:31:50.000000Z" endDate="2019-01-07T15:12:03.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21112">
+        <Latitude unit="DEGREES">-78.164565</Latitude>
+        <Longitude unit="DEGREES">-84.044596</Longitude>
+        <Elevation>327.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21112</SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T21:31:50.000000Z" endDate="2019-01-07T15:12:03.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21112">
+        <Latitude unit="DEGREES">-78.164565</Latitude>
+        <Longitude unit="DEGREES">-84.044596</Longitude>
+        <Elevation>327.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21112</SerialNumber>
+          <InstallationDate>2018-12-13T21:31:50.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T15:12:03.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21113" startDate="2018-12-13T21:46:17.000000Z" endDate="2019-01-14T15:26:41.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.16286</Latitude>
+      <Longitude unit="DEGREES">-84.025646</Longitude>
+      <Elevation>332.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T21:46:17.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T21:46:17.000000Z" endDate="2019-01-14T15:26:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21113">
+        <Latitude unit="DEGREES">-78.16286</Latitude>
+        <Longitude unit="DEGREES">-84.025646</Longitude>
+        <Elevation>332.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21113</SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T21:46:17.000000Z" endDate="2019-01-14T15:26:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21113">
+        <Latitude unit="DEGREES">-78.16286</Latitude>
+        <Longitude unit="DEGREES">-84.025646</Longitude>
+        <Elevation>332.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21113</SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T21:46:17.000000Z" endDate="2019-01-14T15:26:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21113">
+        <Latitude unit="DEGREES">-78.16286</Latitude>
+        <Longitude unit="DEGREES">-84.025646</Longitude>
+        <Elevation>332.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21113</SerialNumber>
+          <InstallationDate>2018-12-13T21:46:17.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T15:26:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21122" startDate="2018-12-13T21:18:04.000000Z" endDate="2019-01-15T07:39:11.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.168447</Latitude>
+      <Longitude unit="DEGREES">-84.035722</Longitude>
+      <Elevation>328.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T21:18:04.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T21:18:04.000000Z" endDate="2019-01-15T07:39:11.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21122">
+        <Latitude unit="DEGREES">-78.168447</Latitude>
+        <Longitude unit="DEGREES">-84.035722</Longitude>
+        <Elevation>328.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21122</SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T21:18:04.000000Z" endDate="2019-01-15T07:39:11.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21122">
+        <Latitude unit="DEGREES">-78.168447</Latitude>
+        <Longitude unit="DEGREES">-84.035722</Longitude>
+        <Elevation>328.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21122</SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T21:18:04.000000Z" endDate="2019-01-15T07:39:11.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21122">
+        <Latitude unit="DEGREES">-78.168447</Latitude>
+        <Longitude unit="DEGREES">-84.035722</Longitude>
+        <Elevation>328.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21122</SerialNumber>
+          <InstallationDate>2018-12-13T21:18:04.000000Z</InstallationDate>
+          <RemovalDate>2019-01-15T07:39:11.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21123" startDate="2018-12-13T22:00:22.000000Z" endDate="2019-01-13T09:41:48.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.166644</Latitude>
+      <Longitude unit="DEGREES">-84.016835</Longitude>
+      <Elevation>335.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T22:00:22.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T22:00:22.000000Z" endDate="2019-01-13T09:41:48.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21123">
+        <Latitude unit="DEGREES">-78.166644</Latitude>
+        <Longitude unit="DEGREES">-84.016835</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21123</SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T22:00:22.000000Z" endDate="2019-01-13T09:41:48.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21123">
+        <Latitude unit="DEGREES">-78.166644</Latitude>
+        <Longitude unit="DEGREES">-84.016835</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21123</SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T22:00:22.000000Z" endDate="2019-01-13T09:41:48.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21123">
+        <Latitude unit="DEGREES">-78.166644</Latitude>
+        <Longitude unit="DEGREES">-84.016835</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21123</SerialNumber>
+          <InstallationDate>2018-12-13T22:00:22.000000Z</InstallationDate>
+          <RemovalDate>2019-01-13T09:41:48.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21124" startDate="2018-12-13T22:18:05.000000Z" endDate="2019-01-08T06:58:41.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.15919</Latitude>
+      <Longitude unit="DEGREES">-84.03674</Longitude>
+      <Elevation>329.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T22:18:05.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T22:18:05.000000Z" endDate="2019-01-08T06:58:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21124">
+        <Latitude unit="DEGREES">-78.15919</Latitude>
+        <Longitude unit="DEGREES">-84.03674</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21124</SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T22:18:05.000000Z" endDate="2019-01-08T06:58:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21124">
+        <Latitude unit="DEGREES">-78.15919</Latitude>
+        <Longitude unit="DEGREES">-84.03674</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21124</SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T22:18:05.000000Z" endDate="2019-01-08T06:58:41.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21124">
+        <Latitude unit="DEGREES">-78.15919</Latitude>
+        <Longitude unit="DEGREES">-84.03674</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21124</SerialNumber>
+          <InstallationDate>2018-12-13T22:18:05.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T06:58:41.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21132" startDate="2018-12-13T20:07:06.000000Z" endDate="2019-01-08T01:47:19.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.172292</Latitude>
+      <Longitude unit="DEGREES">-84.026764</Longitude>
+      <Elevation>329.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T20:07:06.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T20:07:06.000000Z" endDate="2019-01-08T01:47:19.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21132">
+        <Latitude unit="DEGREES">-78.172292</Latitude>
+        <Longitude unit="DEGREES">-84.026764</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21132</SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T20:07:06.000000Z" endDate="2019-01-08T01:47:19.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21132">
+        <Latitude unit="DEGREES">-78.172292</Latitude>
+        <Longitude unit="DEGREES">-84.026764</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21132</SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T20:07:06.000000Z" endDate="2019-01-08T01:47:19.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21132">
+        <Latitude unit="DEGREES">-78.172292</Latitude>
+        <Longitude unit="DEGREES">-84.026764</Longitude>
+        <Elevation>329.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21132</SerialNumber>
+          <InstallationDate>2018-12-13T20:07:06.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T01:47:19.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21133" startDate="2018-12-13T20:48:16.000000Z" endDate="2019-01-07T22:58:38.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.170499</Latitude>
+      <Longitude unit="DEGREES">-84.008045</Longitude>
+      <Elevation>330.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T20:48:16.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T20:48:16.000000Z" endDate="2019-01-07T22:58:38.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21133">
+        <Latitude unit="DEGREES">-78.170499</Latitude>
+        <Longitude unit="DEGREES">-84.008045</Longitude>
+        <Elevation>330.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21133</SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T20:48:16.000000Z" endDate="2019-01-07T22:58:38.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21133">
+        <Latitude unit="DEGREES">-78.170499</Latitude>
+        <Longitude unit="DEGREES">-84.008045</Longitude>
+        <Elevation>330.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21133</SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T20:48:16.000000Z" endDate="2019-01-07T22:58:38.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21133">
+        <Latitude unit="DEGREES">-78.170499</Latitude>
+        <Longitude unit="DEGREES">-84.008045</Longitude>
+        <Elevation>330.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21133</SerialNumber>
+          <InstallationDate>2018-12-13T20:48:16.000000Z</InstallationDate>
+          <RemovalDate>2019-01-07T22:58:38.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21134" startDate="2018-12-13T22:30:01.000000Z" endDate="2019-01-16T01:40:35.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.161376</Latitude>
+      <Longitude unit="DEGREES">-84.054649</Longitude>
+      <Elevation>323.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T22:30:01.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T22:30:01.000000Z" endDate="2019-01-16T01:40:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21134">
+        <Latitude unit="DEGREES">-78.161376</Latitude>
+        <Longitude unit="DEGREES">-84.054649</Longitude>
+        <Elevation>323.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21134</SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T22:30:01.000000Z" endDate="2019-01-16T01:40:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21134">
+        <Latitude unit="DEGREES">-78.161376</Latitude>
+        <Longitude unit="DEGREES">-84.054649</Longitude>
+        <Elevation>323.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21134</SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T22:30:01.000000Z" endDate="2019-01-16T01:40:35.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21134">
+        <Latitude unit="DEGREES">-78.161376</Latitude>
+        <Longitude unit="DEGREES">-84.054649</Longitude>
+        <Elevation>323.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21134</SerialNumber>
+          <InstallationDate>2018-12-13T22:30:01.000000Z</InstallationDate>
+          <RemovalDate>2019-01-16T01:40:35.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21142" startDate="2018-12-13T19:49:24.000000Z" endDate="2019-01-08T05:30:02.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.17604</Latitude>
+      <Longitude unit="DEGREES">-84.017999</Longitude>
+      <Elevation>331.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T19:49:24.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T19:49:24.000000Z" endDate="2019-01-08T05:30:02.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21142">
+        <Latitude unit="DEGREES">-78.17604</Latitude>
+        <Longitude unit="DEGREES">-84.017999</Longitude>
+        <Elevation>331.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21142</SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T19:49:24.000000Z" endDate="2019-01-08T05:30:02.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21142">
+        <Latitude unit="DEGREES">-78.17604</Latitude>
+        <Longitude unit="DEGREES">-84.017999</Longitude>
+        <Elevation>331.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21142</SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T19:49:24.000000Z" endDate="2019-01-08T05:30:02.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21142">
+        <Latitude unit="DEGREES">-78.17604</Latitude>
+        <Longitude unit="DEGREES">-84.017999</Longitude>
+        <Elevation>331.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21142</SerialNumber>
+          <InstallationDate>2018-12-13T19:49:24.000000Z</InstallationDate>
+          <RemovalDate>2019-01-08T05:30:02.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="21143" startDate="2018-12-13T20:22:13.000000Z" endDate="2019-01-14T07:02:31.000000Z" restrictedStatus="open" ns0:alternateNetworkCodes="_PASSCAL">
+      <Latitude unit="DEGREES">-78.174277</Latitude>
+      <Longitude unit="DEGREES">-84.00045</Longitude>
+      <Elevation>335.0</Elevation>
+      <Site>
+        <Name>Converted from UTM Zone 16S</Name>
+      </Site>
+      <CreationDate>2018-12-13T20:22:13.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>3</SelectedNumberChannels>
+      <Channel code="GP1" startDate="2018-12-13T20:22:13.000000Z" endDate="2019-01-14T07:02:31.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="1" ns0:PH5ReceiverId="21143">
+        <Latitude unit="DEGREES">-78.174277</Latitude>
+        <Longitude unit="DEGREES">-84.00045</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21143</SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GP2" startDate="2018-12-13T20:22:13.000000Z" endDate="2019-01-14T07:02:31.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="2" ns0:PH5ReceiverId="21143">
+        <Latitude unit="DEGREES">-78.174277</Latitude>
+        <Longitude unit="DEGREES">-84.00045</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">90.0</Azimuth>
+        <Dip unit="DEGREES">0.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21143</SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+      <Channel code="GPZ" startDate="2018-12-13T20:22:13.000000Z" endDate="2019-01-14T07:02:31.000000Z" restrictedStatus="open" locationCode="" ns0:PH5Array="001" ns0:PH5Component="3" ns0:PH5ReceiverId="21143">
+        <Latitude unit="DEGREES">-78.174277</Latitude>
+        <Longitude unit="DEGREES">-84.00045</Longitude>
+        <Elevation>335.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">90.0</Dip>
+        <SampleRate unit="SAMPLES/S">1000.0</SampleRate>
+        <Sensor>
+          <Type>Geo Space GS-30CT</Type>
+          <Description>Geo Space GS-30CT/FairfieldNodal ZLAND 3C</Description>
+          <Manufacturer>Geo Space</Manufacturer>
+          <Vendor></Vendor>
+          <Model>GS-30CT</Model>
+          <SerialNumber></SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </Sensor>
+        <DataLogger>
+          <Type>FairfieldNodal ZLAND 3C</Type>
+          <Description></Description>
+          <Manufacturer>FairfieldNodal</Manufacturer>
+          <Vendor></Vendor>
+          <Model>ZLAND 3C</Model>
+          <SerialNumber>1X21143</SerialNumber>
+          <InstallationDate>2018-12-13T20:22:13.000000Z</InstallationDate>
+          <RemovalDate>2019-01-14T07:02:31.000000Z</RemovalDate>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>2059290000.0</Value>
+            <Frequency>40.0</Frequency>
+            <InputUnits>
+              <Name>M/S</Name>
+              <Description>Velocity in Meters per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>COUNTS</Name>
+              <Description>Digital Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+          <Stage number="1">
+            <PolesZeros>
+              <InputUnits>
+                <Name>M/S</Name>
+                <Description>Velocity in Meters per Second</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </OutputUnits>
+              <PzTransferFunctionType>LAPLACE (RADIANS/SECOND)</PzTransferFunctionType>
+              <NormalizationFactor>0.999813</NormalizationFactor>
+              <NormalizationFrequency unit="HERTZ">40.0</NormalizationFrequency>
+              <Zero number="0">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Zero number="1">
+                <Real minusError="0.0" plusError="0.0">0.0</Real>
+                <Imaginary minusError="0.0" plusError="0.0">0.0</Imaginary>
+              </Zero>
+              <Pole number="0">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="22.43" plusError="22.43">22.43</Imaginary>
+              </Pole>
+              <Pole number="1">
+                <Real minusError="-21.99" plusError="-21.99">-21.99</Real>
+                <Imaginary minusError="-22.43" plusError="-22.43">-22.43</Imaginary>
+              </Pole>
+            </PolesZeros>
+            <StageGain>
+              <Value>76.7144</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="2">
+            <StageGain>
+              <Value>8.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+          <Stage number="3">
+            <Coefficients>
+              <InputUnits>
+                <Name>V</Name>
+                <Description>Volts</Description>
+              </InputUnits>
+              <OutputUnits>
+                <Name>COUNTS</Name>
+                <Description>Digital Counts</Description>
+              </OutputUnits>
+              <CfTransferFunctionType>DIGITAL</CfTransferFunctionType>
+            </Coefficients>
+            <Decimation>
+              <InputSampleRate unit="HERTZ">1000.0</InputSampleRate>
+              <Factor>1</Factor>
+              <Offset>0</Offset>
+              <Delay>0.0</Delay>
+              <Correction>0.0</Correction>
+            </Decimation>
+            <StageGain>
+              <Value>3355400.0</Value>
+              <Frequency>40.0</Frequency>
+            </StageGain>
+          </Stage>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
