@@ -102,12 +102,7 @@ if __name__ == "__main__":
         for chanl in channels:
 
             # Read, sort, and filter waveforms
-            st = read(waveform_file).sort(
-                [
-                    "station",  # Sort by station first
-                    "component",  # Sort by component second
-                ]
-            )
+            st = read(waveform_file).sort(["station"])  # Sort by station
             wf = st.select(channel=chanl)
 
             # Read and filter picks by phase
