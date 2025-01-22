@@ -38,6 +38,10 @@ r_mseed_path = Path("./inputs/raw_mSEED")  # Raw mSEED directory
 log_path = Path("./inputs/logs")  # Log directory
 response_file = Path("./inputs/response.xml")  # Instrument response inventory
 
+# Downloaded data formats
+seismic_format = "MSEED"  # Seismic data format
+response_format = "STATIONXML"  # Instrument response inventory format
+
 # Network and data center
 network = "5B"
 datacenter = "IRISPH5"
@@ -149,8 +153,8 @@ def download_waveform_data(
     start_str = starttime.strftime("%Y%m%d%H%M%S%f")
     end_str = endtime.strftime("%Y%m%d%H%M%S%f")
     combined_name = f"{datacenter}_{network}_{start_str}_{end_str}"
-    output_filename = r_mseed_path / f"{combined_name}.mseed"
-    master_stream.write(output_filename, format="MSEED")
+    output_filename = r_mseed_path / f"{combined_name}.{seismic_format.lower()}"
+    master_stream.write(output_filename, format=seismic_format)
 
 
 def download_and_handle_exception(
@@ -265,7 +269,7 @@ if __name__ == "__main__":
         endtime=endtime,
         level="response",
     )
-    inv.write(response_file, format="STATIONXML", validate=True)
+    inv.write(response_file, format=response_format, validate=True)
 
     logging.info("Instrument response inventory written")
     logging.info("################################################\n")

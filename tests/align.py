@@ -27,6 +27,9 @@ r_mseed_path = Path("./inputs/raw_mSEED")  # Raw mSEED directory
 log_path = Path("./inputs/logs")  # Log directory
 a_mseed_path = Path("./inputs/aligned_mSEED")  # Aligned mSEED directory
 
+# Aligned data format
+seismic_format = "MSEED"  # Seismic data format
+
 # Wildcard pattern to match raw mSEED files
 # Sometimes, the wildcard may be too broad and match unwanted files
 # Alternatively, point r_mseed_path to a directory containing only target files
@@ -149,7 +152,7 @@ if __name__ == "__main__":
 
         # Write stream to aligned mSEED directory
         aligned_file_path = a_mseed_path / f"aligned_{strm_file_path.name}"
-        strm.write(aligned_file_path, format="MSEED")
+        strm.write(aligned_file_path, format=seismic_format)
 
     logging.info("################################################\n")
 
