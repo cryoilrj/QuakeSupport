@@ -1,5 +1,5 @@
 # QuakeSupport
-Python package for streamlining end-to-end QuakeMigrate processing with GrowClust integration
+Python package for streamlining end-to-end QuakeMigrate processing with GrowClust integration.
 
 ![](QS-logo-title-resized.png)
 
