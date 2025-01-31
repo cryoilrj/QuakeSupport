@@ -1,4 +1,5 @@
-# QuakeSupport
-Seismology processing and analysis support tools, particularly to complement the [QuakeMigrate](https://github.com/QuakeMigrate/QuakeMigrate) and [GrowClust](https://github.com/dttrugman/GrowClust) softwares. Compatible with Linux, Windows, and Mac.
+# QuakeSupport: Streamlining end-to-end [QuakeMigrate](https://github.com/QuakeMigrate/QuakeMigrate) processing with [GrowClust](https://github.com/dttrugman/GrowClust) integration
 
-Please direct comments/questions to: **Ian Lee** ([ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com))
+![](QS-logo-title.png)
+
+For comments or questions, contact **Ian Lee** at [ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com).
