@@ -18,7 +18,7 @@ jobs:
         uses: openjournals/openjournals-draft-action@master
         with:
           journal: joss
-          paper-path: paper/paper.md  # Correct path to your paper
+          paper-path: paper/paper.md  # Path to paper.md
 
       - name: Upload PDF
         uses: actions/upload-artifact@v4
