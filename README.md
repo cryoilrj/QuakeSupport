@@ -3,4 +3,4 @@ Python package for streamlining end-to-end QuakeMigrate processing with GrowClus
 
 ![](QS-logo-title-resized.png)
 
-For comments or questions, contact **Ian Lee** at [ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com).
+For questions or comments, contact **Ian Lee** at [ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com).
