@@ -37,6 +37,12 @@ mseed_pattern = "*.mseed"
 # Seismogram channels
 channels = ["GPZ", "GP1", "GP2"]
 
+# Directory structure and file naming format used by QuakeMigrate to query waveform archives
+# Accepts "YEAR/JD/*_STATION_*" and "YEAR/JD/STATION"
+# Refer to quakemigrate/io/data.py in QuakeMigrate repository for format details
+# Match archive_format in detect.py and locate.py
+archive_format = "YEAR/JD/*_STATION_*"
+
 # Verbose logging flag (includes trace information if True)
 verbose_logging = False
 
@@ -136,7 +142,14 @@ if __name__ == "__main__":
                 for trce in c:
                     sta = trce.stats.station  # Station
                     cha = trce.stats.channel  # Channel
-                    filename = f"{year}{jul_starttime}_{time_str}_{sta}_{cha}.mseed"
+                    if archive_format == "YEAR/JD/*_STATION_*":
+                        filename = f"{year}{jul_starttime}_{time_str}_{sta}_{cha}.mseed"
+                    elif archive_format == "YEAR/JD/STATION":
+                        filename = f"{sta}_{cha}.mseed"
+                    else:
+                        archive_format_error = "Invalid archive_format"
+                        logging.error(archive_format_error)
+                        raise ValueError(archive_format_error)
                     trce.write(dest / filename, format="MSEED")
 
     logging.info("################################################\n")
