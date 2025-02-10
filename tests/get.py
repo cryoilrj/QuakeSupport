@@ -52,7 +52,7 @@ datacenter = "IRISPH5"
 # Option 1: String (single station)
 # station_input = "16611"
 
-# Option 2: Wildcard string (multiple stations)
+# Option 2: Wildcard pattern (multiple stations)
 # station_input = "166*"  # Matches stations starting with "166"
 
 # Option 3: List of station codes (multiple stations)
