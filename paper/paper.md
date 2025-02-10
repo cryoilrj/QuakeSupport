@@ -25,7 +25,7 @@ authors:
 affiliations:
  - name: Department of Geosciences, Pennsylvania State University, University Park, PA, USA
    index: 1
-date: 31 January 2025
+date: 09 February 2025
 bibliography: paper.bib
 ---
 
@@ -50,14 +50,16 @@ QuakeMigrate and GrowClust are highly effective for generating high-granularity 
 
 Beyond managing the complexities and intricacies of data preparation, data and run partitioning, and execution, `QuakeSupport` focuses on accessibility and ease of use. It centralizes user-modifiable parameters in dedicated configuration sections for intuitive access. It also leverages multithreading and multiprocessing for performance, and runs cross-platform on Linux, Windows, and Mac. A test module using 2018-2019 Rutford Ice Stream 5B network data [@Anandakrishnan:2018] is provided for validation and familiarization. A comprehensive user guide details configuration, usage, and best practices.
 
-`QuakeSupport` was developed to ease the learning curve of the QuakeMigrate and GrowClust workflows, drawing on years of hands-on experience with icequake research in Rutford Ice Stream, West Antarctica [@Lee:2020; @Lee:2021; @Lee:2022; @Lee:2023; @Lee:2024; @Lee:2025]. It was conceived in response to challenges and user pain points encountered while using QuakeMigrate and GrowClust. Designed for both experienced seismologists and students, it supports users working with QuakeMigrate and GrowClust together, QuakeMigrate alone, or standard seismology tasks such as efficient data downloading. By combining automation, performance enhancement, and modularity, `QuakeSupport` enables researchers to dedicate more effort to seismic analysis and discovery.
+`QuakeSupport` was developed to ease the learning curve of the QuakeMigrate and GrowClust workflows, drawing on years of hands-on experience with icequake research in Rutford Ice Stream, West Antarctica [@Lee:2020; @Lee:2021; @Lee:2022; @Lee:2023; @Lee:2024a; @Lee:2024b]. It was conceived in response to challenges and user pain points encountered while using QuakeMigrate and GrowClust. Designed for both experienced seismologists and students, it supports users working with QuakeMigrate and GrowClust together, QuakeMigrate alone, or standard seismology tasks such as efficient data downloading. By combining automation, performance enhancement, and modularity, `QuakeSupport` enables researchers to dedicate more effort to seismic analysis and discovery.
 
 # Future work
 
-`QuakeSupport` is continuously evolving to incorporate new functionality and remain compatible with QuakeMigrate and GrowClust updates. For suggestions and comments, please contact Ian Lee at [ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com).
+`QuakeSupport` was developed to address key challenges in our Rutford Ice Stream icequakes project, particularly in efficiently processing extended time periods in QuakeMigrate and integrating its outputs with GrowClust. This work builds on the robust foundation established by the QuakeMigrate and GrowClust developers, expanding their capabilities rather than replicating them, thereby benefiting downstream users. `QuakeSupport` is not a standalone system but an extension designed to enhance processing, streamline workflows, and improve compatibility, ensuring these powerful tools work together even more effectively.
+
+`QuakeSupport` is maintained as needed to ensure ongoing compatibility with QuakeMigrate and GrowClust updates. Additional functionalities and improvements may be considered, particularly if similar features are not already incorporated into QuakeMigrate or GrowClust. For suggestions and comments, contact Ian Lee at [ianrj.lee@gmail.com](mailto:ianrj.lee@gmail.com).
 
 # Acknowledgements
 
-We thank Amanda Willet for testing the `QuakeSupport` prototypes and providing valuable feedback that helped identify user pain points and improve functionality. We also extend our gratitude to the developers of QuakeMigrate (particularly Conor Bacon and Tom Winder) and GrowClust (particularly Daniel Trugman) for developing these remarkable and invaluable tools upon which `QuakeSupport` builds, as well as for their readiness to address questions related to their software. Lastly, we thank Pennsylvania State University and the British Antarctic Survey for making the test run dataset available, which was collected with support from the U.S. National Science Foundation (NSF) award 1643961.
+We thank Amanda Willet for testing the `QuakeSupport` prototypes and providing valuable feedback that helped identify user pain points and improve functionality. We also extend our gratitude to the developers of QuakeMigrate (notably Conor Bacon and Tom Winder) and GrowClust (notably Daniel Trugman) for creating these invaluable tools on which QuakeSupport builds, as well as for their willingness to address questions related to their software. Lastly, we thank Pennsylvania State University and the British Antarctic Survey for making the test run dataset available. This dataset was collected with support from the U.S. National Science Foundation (NSF) award 1643961. Additional support for this study was provided by NSF award 1738934 and the Heising Simons Foundation.
 
 # References
