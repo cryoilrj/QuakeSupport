@@ -45,7 +45,7 @@ trig.threshold_method = "static"
 trig.static_threshold = 6.0
 
 # --- Dynamic (Median Absolute Deviation) threshold ---
-# trig.threshold_method = "dynamic"
+# trig.threshold_method = "mad"
 # trig.mad_window_length = 7200.
 # trig.mad_multiplier = 8.
 
