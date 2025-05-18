@@ -1,4 +1,6 @@
 # QuakeSupport
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15460028.svg)](https://doi.org/10.5281/zenodo.15460028)
+
 Python package for streamlining end-to-end QuakeMigrate processing with GrowClust integration.
 
 ![](QS-wf.png)
