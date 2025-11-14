@@ -5,7 +5,7 @@ Python package for streamlining end-to-end QuakeMigrate processing with GrowClus
 
 ![](QS-wf.png)
 
-**Compatible with QuakeMigrate v1.2.1 and GrowClust (no versioning, as of 08-03-2025).**
+**Compatible with QuakeMigrate v1.2.1 and both the Fortran and Julia implementations of GrowClust (no versioning, as of 08-03-2025).**
 
 QuakeSupport was developed to address key challenges in our Rutford Ice Stream icequakes project, particularly in efficiently processing extended time periods in QuakeMigrate and integrating its outputs with GrowClust. This work builds on the robust foundation established by the QuakeMigrate and GrowClust developers, expanding their capabilities rather than replicating them, thereby benefiting downstream users.
 
